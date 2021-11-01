@@ -1,0 +1,17 @@
+Basic HTML structure to include heading, forms and a container of the todo list items with a +Tick (fas fa-plus, fa-check) buttons from the font awesome lib
+Create a function to process and add to a list items 
+Use strikethrough as done , use delete button to remove it from the UL
+Create a function that removes and item from the list that is triggered by a check button -- striketrough
+Create a listener to add, remove from a list of todo that triggers the function 
+- use json object not an array -- when you iterate then check if the boolean value is yes/no and then format it accordingly
+- try with 2-3 styles 
+    Simple array style 
+    json 
+    which indexvalues are done and which are not --> timer 
+
+At the end try the filter on the right comple - incomplete all
+
+Style
+- Use icons to make it look good
+- see if you want to add windows/brave kind of background to make it look better
+- 

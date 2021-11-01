@@ -1,0 +1,130 @@
+/* Removing the inherent margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient( 120deg , #F9C968, #F6B177);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    min-height: 200vh;
+}
+
+header{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+header,
+form{
+    display: flex;
+    justify-content: center;
+    min-height: 30vh;
+    align-items: center;
+}
+
+
+
+form button,
+form input{
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: white;
+    border: none;
+
+}
+ 
+form button{
+    font-size: 2rem;
+    color: grey;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: .2rem;  
+   }
+
+form button :hover{
+    color: tomato;
+}
+
+ .todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+
+ .todo-list{    
+    min-width: 32%;
+    list-style: none;
+ }
+
+ .todo{
+   display: flex; 
+   background: white;
+   color: black;
+   display: flex;
+   font-size: 1.5rem;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0.5rem;
+ }
+
+ .todo li{
+    flex: 1;
+ }
+
+ .todo-item{
+    margin-left: .5rem;
+ }
+
+ .done-button, .delete-button{
+    background: #ff6f47 ;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 1rem;
+    display: flex;
+    margin: 0rem;
+ }
+
+ .done-button{
+    background: #55BFA4;
+ }
+
+ .input-filter{
+     position: relative;
+     overflow: hidden;
+     margin: .6rem;
+     align-items: center;
+     
+ }
+
+ .input-filter::after{
+    content: "\25BC";
+    background: #ff6f47;
+    padding: 1.1rem;
+    top: 0;
+    right: 0;
+    font-size: .8rem;
+    pointer-events: none;
+    margin-left: -20%;
+ }
+
+ .todo-filter{
+    font-size:1rem;
+    padding: 1rem;
+    border: none;
+    min-width: 10rem;
+
+ }
+
+ .complete{
+    text-decoration: line-through;
+    opacity: .5;
+ }
+
+ .fa-trash, .fa-check{
+    pointer-events: none;
+ }
